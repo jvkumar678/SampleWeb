@@ -1,6 +1,10 @@
 <?xml version="1.0" ?> 
 <project name="SampleWeb" default="war">
-
+<target name="clean">
+		<delete dir="dist" />
+		<delete dir="build" />
+	</target>
+	
 	<path id="compile.classpath">
 		<fileset dir="WebContent/WEB-INF/lib">
 			<include name="*.jar"/>
@@ -26,9 +30,5 @@
 		</war>
 	</target>
 	
-	<target name="clean">
-		<delete dir="dist" />
-		<delete dir="build" />
-	</target>
 	
 </project>
