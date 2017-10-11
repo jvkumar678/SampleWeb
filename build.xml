@@ -20,9 +20,9 @@
 	</target>
 	
 	<target name="compile" depends="init" >
-		<javac destdir="build/classes" debug="true" srcdir="src">
+		<!--<javac destdir="build/classes" debug="true" srcdir="src">
 			<classpath refid="compile.classpath"/>
-		</javac>
+		</javac>-->
 	</target>
 	
 	<target name="final" depends="compile">
